@@ -40,8 +40,6 @@ html, body {
     font-family: 'DM Sans', sans-serif;
     letter-spacing: -0.5;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     background-color: var(--page-bg);
     color: var(--text-color);
 }
@@ -63,6 +61,16 @@ html, body {
     line-height: 1.3;
     color: var(--accent);
     text-align: center;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* General */
@@ -102,55 +110,6 @@ html, body {
     z-index: 9;
 }
 /* Dark mode btn */
-
-
-/* Header */
-.header {
-    background-color: var(--dark-bg);
-    min-height: 695px;
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./../img/header-bg.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center center;
-    color: var(--header-text);
-    text-align: center;
-}
-
-.header__wrapper {
-    max-width: 660px;
-    padding: 0 15px;
-}
-
-.header__title {
-    font-size: 40px;
-    line-height: 1.4;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.header__title strong {
-    font-weight: 700;
-    font-size: 60px;
-}
-
-.header__title em {
-    color: var(--accent);
-    font-style: normal;
-}
-
-.header__text {
-    font-size: 18px;
-    line-height: 1.333;
-    margin-bottom: 40px;
-}
-
-.header__text p + p {
-    margin-top: 1em;
-}
 
 .btn {
     display: inline-block;
@@ -195,7 +154,7 @@ html, body {
     position: relative;
     top: 1px;
 }
-/* Header */
+
 
 /* Projects */
 .projects {
@@ -204,25 +163,6 @@ html, body {
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 30px;
-}
-
-.project {
-    max-width: 370px;
-    background-color: var(--project-card-bg);
-    box-shadow: var(--box-shadow);
-    border-radius: 10px;
-}
-
-.project__img {
-    border-radius: 10px;
-}
-
-.project__title {
-    padding: 15px 20px 25px;
-    font-size: 24px;
-    line-height: 1.3;
-    font-weight: 700;
-    color: var(--project-card-text);
 }
 /* Projects */
 
@@ -282,36 +222,6 @@ html, body {
     margin-top: 0.5em;
 }
 /* Skills */
-
-/* Footer */
-.footer {
-    padding: 60px 0 50px;
-    background-color: var(--dark-bg);
-    color: var(--white);
-    margin-top: auto;
-}
-
-.footer__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 27px;
-}
-
-.social {
-    display: flex;
-    column-gap: 30px;
-    align-items: center;
-}
-
-.copyright {
-    font-size: 16px;
-}
-
-.copyright p + p {
-    margin-top: 0.5em;
-}
-/* Footer */
 
 @media (max-width: 620px) {
     .header {
