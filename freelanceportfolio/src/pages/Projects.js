@@ -12,7 +12,7 @@ export class Projects extends Component {
                 <ul className="projects">
                     
                 {projects.map((project) => {
-                    return <Project key={project.id} title={project.title} img={project.img} />
+                    return <Project key={project.id} id={project.id} title={project.title} img={project.img} />
                 })}
                 
                 </ul>
